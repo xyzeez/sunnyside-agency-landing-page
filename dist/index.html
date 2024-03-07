@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,219 +7,327 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png" />
+      href="./images/favicon-32x32.png"
+    />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header
+      class="header fixed top-0 z-10 flex w-full flex-row items-center justify-between px-6 py-8"
+    >
       <a href="#" class="header__logo logo">
-        <img src="./images/logo.svg" alt="" class="logo__img" />
+        <img src="../src/images/logo.svg" alt="" class="logo__img" />
       </a>
       <nav class="header__nav nav">
         <div class="nav__toggle">
-          <img src="./images/icon-hamburger.svg" alt="" />
+          <img src="../src/images/icon-hamburger.svg" alt="" />
         </div>
-        <menu class="nav__menu">
+        <menu
+          class="nav__menu after:clip-polygon absolute right-6 top-[calc(100%+1.2rem)] flex hidden w-[calc(100%-3rem)] flex-col items-center gap-6 bg-white py-10 font-barlow text-[1.2rem] font-semibold text-blue-dark-gray after:absolute after:-top-6 after:right-0 after:aspect-[5/6] after:h-7 after:bg-white after:content-['']"
+        >
           <li class="nav__item"><a href="#" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item my-4">
+            <a
+              href="#"
+              class="nav__link rounded-full bg-yellow px-8 py-4 font-fraunces text-[1rem] font-[700] uppercase text-blue-desaturated"
+            >
+              Contact
+            </a>
+          </li>
         </menu>
       </nav>
     </header>
     <main class="main">
-      <section class="hero">
-        <h1 class="hero__heading heading">We are creatives</h1>
-        <img src="" alt="" class="hero__img" />
-        <picture class="hero__img">
-          <source
-            srcset="./images/desktop/image-header.jpg.jpg"
-            media="(min-width: 600px)" />
-          <img src="./images/mobile/image-header.jpg" alt="" />
-        </picture>
+      <section
+        class="hero flex min-h-[84vh] flex-col items-center bg-hero-img bg-contain bg-[center_bottom] bg-no-repeat after:absolute after:bottom-[228px] after:content-[url('/src/images/icon-arrow-down.svg')]"
+      >
+        <h1
+          class="hero__heading heading mt-36 text-center font-fraunces text-[2.5rem] font-[900] uppercase leading-[3rem] tracking-[0.18em] text-white"
+        >
+          We are creatives
+        </h1>
       </section>
-      <section class="features">
+      <section class="features flex flex-col text-center">
         <div class="feature">
           <picture class="feature__img">
             <source
-              srcset="./images/desktop/image-transform.jpg"
-              media="(min-width: 600px)" />
-            <img src="./images/mobile/image-transform.jpg" alt="" />
+              srcset="../src/images/desktop/image-transform.jpg"
+              media="(min-width: 600px)"
+            />
+            <img src="../src/images/mobile/image-transform.jpg" alt="" />
           </picture>
-          <div class="feature__content">
-            <h2 class="feature__heading heading">Transform your brand</h2>
-            <p class="feature__text text">
+          <div class="feature__content flex flex-col items-center px-6 py-16">
+            <h2
+              class="feature__heading heading font-fraunces text-[2rem] font-[900] leading-[2.5rem] text-blue-desaturated"
+            >
+              Transform your brand
+            </h2>
+            <p
+              class="feature__text text mb-8 mt-6 font-barlow text-[1.15rem] font-semibold leading-[1.8rem] text-blue-dark-gray"
+            >
               We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </p>
-            <a href="#" class="feature__link">Learn more</a>
+            <a
+              href="#"
+              class="feature__link relative px-1 font-fraunces text-[1rem] font-[900] uppercase after:absolute after:bottom-0.5 after:left-0 after:h-1 after:w-full after:bg-yellow after:opacity-40 after:mix-blend-multiply after:content-['']"
+              >Learn more</a
+            >
           </div>
         </div>
         <div class="feature">
           <picture class="feature__img">
             <source
-              srcset="./images/desktop/image-stand-out.jpg"
-              media="(min-width: 600px)" />
-            <img src="./images/mobile/image-stand-out.jpg" alt="" />
+              srcset="../src/images/desktop/image-stand-out.jpg"
+              media="(min-width: 600px)"
+            />
+            <img src="../src/images/mobile/image-stand-out.jpg" alt="" />
           </picture>
-          <div class="feature__content">
-            <h2 class="feature__heading heading">
+          <div class="feature__content flex flex-col items-center px-6 py-16">
+            <h2
+              class="feature__heading heading font-fraunces text-[2rem] font-[900] leading-[2.5rem] text-blue-desaturated"
+            >
               Stand out to the right audience
             </h2>
-            <p class="feature__text text">
+            <p
+              class="feature__text text mb-8 mt-6 font-barlow text-[1.15rem] font-semibold leading-[1.8rem] text-blue-dark-gray"
+            >
               Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
             </p>
-            <a href="#" class="feature__link">Learn more</a>
+            <a
+              href="#"
+              class="feature__link relative px-1 font-fraunces text-[1rem] font-[900] uppercase after:absolute after:bottom-0.5 after:left-0 after:h-1 after:w-full after:bg-red after:opacity-40 after:mix-blend-multiply after:content-['']"
+              >Learn more</a
+            >
           </div>
         </div>
-        <div class="feature--single">
-          <picture class="feature__img">
-            <source
-              srcset="./images/desktop/image-graphic-design.jpg"
-              media="(min-width: 600px)" />
-            <img src="./images/mobile/image-graphic-design.jpg" alt="" />
-          </picture>
+        <div
+          class="feature--single flex min-h-[80vh] flex-col items-center justify-end bg-[url(/src/images/desktop/image-graphic-design.jpg)] bg-[center_top] px-6 pb-14"
+        >
           <div class="feature__content">
-            <h3 class="feature__heading heading">Graphic design</h3>
-            <p class="feature__text text">
+            <h3
+              class="feature__heading heading font-fraunces text-[1.75rem] font-[900] leading-[2.5rem] text-cyan"
+            >
+              Graphic Design
+            </h3>
+            <p
+              class="feature__text text mt-5 font-barlow text-[1rem] font-semibold leading-[1.8rem] text-cyan"
+            >
               Great design makes you memorable. We deliver artwork that
               underscores your brand message and captures potential clients’
               attention.
             </p>
           </div>
         </div>
-        <div class="feature--single">
-          <picture class="feature__img">
-            <source
-              srcset="./images/desktop/image-photography.jpg"
-              media="(min-width: 600px)" />
-            <img src="./images/mobile/image-photography.jpg" alt="" />
-          </picture>
+        <div
+          class="feature--single flex min-h-[80vh] flex-col items-center justify-end bg-[url(/src/images/desktop/image-photography.jpg)] bg-[center_top] px-6 pb-14"
+        >
           <div class="feature__content">
-            <h3 class="feature__heading heading">Photography</h3>
-            <p class="feature__text text">
+            <h3
+              class="feature__heading heading font-fraunces text-[1.75rem] font-[900] leading-[2.5rem] text-blue"
+            >
+              Photography
+            </h3>
+            <p
+              class="feature__text text mt-5 font-barlow text-[1rem] font-semibold leading-[1.8rem] text-blue"
+            >
               Increase your credibility by getting the most stunning,
               high-quality photos that improve your business image.
             </p>
           </div>
         </div>
       </section>
-      <section class="testimonials">
-        <h2 class="testimonials__heading heading">Client testimonials</h2>
-        <article class="testimonial">
+      <section
+        class="testimonials flex flex-col items-center px-5 py-16 text-center"
+      >
+        <h2
+          class="testimonials__heading heading mb-7 font-fraunces text-[1rem] font-[900] uppercase tracking-[0.25em] text-blue-gray"
+        >
+          Client testimonials
+        </h2>
+        <article class="testimonial flex flex-col items-center px-5 py-7">
           <img
-            src="./images/image-emily.jpg"
+            src="../src/images/image-emily.jpg"
             alt=""
-            class="testimonial__avatar" />
-          <h3 class="testimonial__title">
-            <span class="testimonial__name heading">Emily R.</span>
+            class="testimonial__avatar w-[75px] rounded-full"
+          />
+          <h3
+            class="testimonial__title order-3 font-barlow text-[0.8rem] font-semibold leading-[2rem] text-blue-gray"
+          >
+            <span
+              class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated"
+              >Emily R.</span
+            >
             Marketing Director
           </h3>
-          <p class="testimonial__content text">
+          <p
+            class="testimonial__content text mb-8 mt-10 font-barlow text-[1.1rem] font-semibold leading-[1.8rem] text-blue-very-dark-gray"
+          >
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
           </p>
         </article>
-        <article class="testimonial">
+        <article class="testimonial flex flex-col items-center px-5 py-7">
           <img
-            src="./images/image-thomas.jpg"
+            src="../src/images/image-thomas.jpg"
             alt=""
-            class="testimonial__avatar" />
-          <h3 class="testimonial__title">
-            <span class="testimonial__name heading">Thomas S.</span>
+            class="testimonial__avatar w-[75px] rounded-full"
+          />
+          <h3
+            class="testimonial__title order-3 font-barlow text-[0.8rem] font-semibold leading-[2rem] text-blue-gray"
+          >
+            <span
+              class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated"
+              >Thomas S.</span
+            >
             Chief Operating Officer
           </h3>
-          <p class="testimonial__content text">
+          <p
+            class="testimonial__content text mb-8 mt-10 font-barlow text-[1.1rem] font-semibold leading-[1.8rem] text-blue-very-dark-gray"
+          >
             Sunnyside’s enthusiasm coupled with their keen interest in our
             brand’s success made it a satisfying and enjoyable experience.
           </p>
         </article>
-        <article class="testimonial">
+        <article class="testimonial flex flex-col items-center px-5 py-7">
           <img
-            src="./images/image-jennie.jpg"
+            src="../src/images/image-jennie.jpg"
             alt=""
-            class="testimonial__avatar" />
-          <h3 class="testimonial__title">
-            <span class="testimonial__name heading">Jennie F.</span>
+            class="testimonial__avatar w-[75px] rounded-full"
+          />
+          <h3
+            class="testimonial__title order-3 font-barlow text-[0.8rem] font-semibold leading-[2rem] text-blue-gray"
+          >
+            <span
+              class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated"
+              >Jennie F.</span
+            >
             Business Owner
           </h3>
-          <p class="testimonial__content text">
+          <p
+            class="testimonial__content text mb-8 mt-10 font-barlow text-[1.1rem] font-semibold leading-[1.8rem] text-blue-very-dark-gray"
+          >
             Incredible end result! Our sales increased over 400% when we worked
             with Sunnyside. Highly recommended!
           </p>
         </article>
       </section>
-      <section class="gallery">
+      <section class="gallery grid grid-cols-2 grid-rows-2">
         <h2 class="sr-only">Gallery</h2>
         <picture class="gallery__img">
           <source
-            srcset="./images/desktop/image-gallery-milkbottles.jpg"
-            media="(min-width: 600px)" />
-          <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="" />
+            srcset="../src/images/desktop/image-gallery-milkbottles.jpg"
+            media="(min-width: 600px)"
+          />
+          <img
+            src="../src/images/mobile/image-gallery-milkbottles.jpg"
+            alt=""
+          />
         </picture>
         <picture class="gallery__img">
           <source
-            srcset="./images/desktop/image-gallery-orange.jpg"
-            media="(min-width: 600px)" />
-          <img src="./images/mobile/image-gallery-orange.jpg" alt="" />
+            srcset="../src/images/desktop/image-gallery-orange.jpg"
+            media="(min-width: 600px)"
+          />
+          <img src="../src/images/mobile/image-gallery-orange.jpg" alt="" />
         </picture>
         <picture class="gallery__img">
           <source
-            srcset="./images/desktop/image-gallery-cone.jpg"
-            media="(min-width: 600px)" />
-          <img src="./images/mobile/image-gallery-cone.jpg" alt="" />
+            srcset="../src/images/desktop/image-gallery-cone.jpg"
+            media="(min-width: 600px)"
+          />
+          <img src="../src/images/mobile/image-gallery-cone.jpg" alt="" />
         </picture>
         <picture class="gallery__img">
           <source
-            srcset="./images/desktop/image-gallery-sugarcubes.jpg"
-            media="(min-width: 600px)" />
-          <img src="./images/mobile/image-gallery-sugarcubes.jpg" alt="" />
+            srcset="../src/images/desktop/image-gallery-sugarcubes.jpg"
+            media="(min-width: 600px)"
+          />
+          <img
+            src="../src/images/mobile/image-gallery-sugar-cubes.jpg"
+            alt=""
+          />
         </picture>
       </section>
     </main>
-    <footer class="footer">
-      <a href="#" class="footer__logo logo">
-        <img src="./images/logo.svg" alt="" class="logo__img" />
+    <footer
+      class="footer flex min-h-[47vh] flex-col items-center bg-[hsl(167,44%,70%)] bg-opacity-80 pb-[5rem] pt-[4rem]"
+    >
+      <a href="#" class="footer__logo logo w-[170px]">
+        <img
+          src="../src/images/logo.svg"
+          alt=""
+          class="logo__img w-full brightness-[58%] contrast-[92%] hue-rotate-[118deg] invert-[38%] saturate-[342%] sepia-[68%]"
+        />
       </a>
-      <nav class="footer__nav nav">
-        <menu class="nav__menu">
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+      <nav
+        class="footer__nav nav mt-10 font-barlow text-[0.9rem] font-semibold"
+      >
+        <menu
+          class="nav__menu flex flex-row items-center gap-14 text-cyan-moderate"
+        >
+          <li class="nav__item tracking-[0.12em]">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item tracking-[0.12em]">
+            <a href="#" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item tracking-[0.12em]">
+            <a href="#" class="nav__link">Projects</a>
+          </li>
         </menu>
       </nav>
-      <ul class="footer__socials socials">
+      <ul class="footer__socials socials mt-auto flex flex-row gap-8">
         <li class="socials__item">
           <a href="#" class="socials__link">
             <img
-              src="./images/icon-facebook.svg"
+              src="../src/images/icon-facebook.svg"
               alt=""
-              class="socials__icon" />
+              class="socials__icon"
+            />
           </a>
         </li>
         <li class="socials__item">
           <a href="#" class="socials__link">
             <img
-              src="./images/icon-instagram.svg"
+              src="../src/images/icon-instagram.svg"
               alt=""
-              class="socials__icon" />
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <img src="./images/icon-twitter.svg" alt="" class="socials__icon" />
+              class="socials__icon"
+            />
           </a>
         </li>
         <li class="socials__item">
           <a href="#" class="socials__link">
             <img
-              src="./images/icon-pinterest.svg"
+              src="../src/images/icon-twitter.svg"
               alt=""
-              class="socials__icon" />
+              class="socials__icon"
+            />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <img
+              src="../src/images/icon-pinterest.svg"
+              alt=""
+              class="socials__icon"
+            />
           </a>
         </li>
       </ul>
