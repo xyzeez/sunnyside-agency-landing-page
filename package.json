@@ -1,0 +1,15 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.html",
+  "scripts": {
+    "start": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
