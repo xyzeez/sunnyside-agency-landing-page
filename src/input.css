@@ -6,4 +6,13 @@
   .clip-polygon {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
+
+  .line {
+    opacity: 1;
+    transform: translate3d(-110%, 0, 0);
+  }
+
+  .translate-line {
+    transform: translate3d(0, 0, 0);
+  }
 }

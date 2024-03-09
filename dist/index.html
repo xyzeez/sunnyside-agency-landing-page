@@ -36,13 +36,31 @@
         <menu
           class="nav__menu after:clip-polygon absolute right-6 top-[calc(100%+1.2rem)] hidden w-[calc(100%-3rem)] flex-col items-center gap-6 bg-white py-10 font-barlow text-[1.2rem] font-semibold text-blue-dark-gray after:absolute after:-top-6 after:right-0 after:aspect-[5/6] after:h-7 after:bg-white after:content-[''] sm:relative sm:right-0 sm:flex sm:w-full sm:flex-row sm:gap-10 sm:bg-transparent sm:p-0 sm:text-[1rem] sm:font-normal sm:text-white sm:after:hidden"
         >
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:opacity-0 after:transition sm:after:bg-white"
+              >About</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:opacity-0 after:transition sm:after:bg-white"
+              >Services</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:opacity-0 after:transition sm:after:bg-white"
+              >Projects</a
+            >
+          </li>
           <li class="nav__item my-4">
             <a
               href="#"
-              class="nav__link rounded-full bg-yellow px-8 py-4 font-fraunces text-[1rem] font-[700] uppercase text-blue-desaturated sm:bg-white sm:px-6 lg:text-[0.9rem]"
+              class="nav__link rounded-full bg-yellow px-8 py-4 font-fraunces text-[1rem] font-[700] uppercase text-blue-desaturated transition hover:bg-opacity-30 sm:bg-white sm:px-6 sm:hover:text-white lg:text-[0.9rem]"
             >
               Contact
             </a>
@@ -94,7 +112,7 @@
             </p>
             <a
               href="#"
-              class="feature__link relative px-1 font-fraunces text-[1rem] font-[900] uppercase after:absolute after:bottom-0.5 after:left-0 after:h-1 after:w-full after:bg-yellow after:opacity-40 after:mix-blend-multiply after:content-['']"
+              class="feature__link relative px-1 font-fraunces text-[1rem] font-[900] uppercase after:absolute after:bottom-0.5 after:left-0 after:h-1 after:w-full after:bg-yellow after:opacity-40 after:mix-blend-multiply after:transition after:content-[''] hover:after:opacity-100"
               >Learn more</a
             >
           </div>
@@ -130,7 +148,7 @@
             </p>
             <a
               href="#"
-              class="feature__link relative px-1 font-fraunces text-[1rem] font-[900] uppercase after:absolute after:bottom-0.5 after:left-0 after:h-1 after:w-full after:bg-red after:opacity-40 after:mix-blend-multiply after:content-['']"
+              class="feature__link relative px-1 font-fraunces text-[1rem] font-[900] uppercase after:absolute after:bottom-0.5 after:left-0 after:h-1 after:w-full after:bg-red after:opacity-40 after:mix-blend-multiply after:transition after:content-[''] hover:after:opacity-100"
               >Learn more</a
             >
           </div>
@@ -307,13 +325,25 @@
           class="nav__menu flex flex-row items-center gap-14 text-cyan-moderate"
         >
           <li class="nav__item tracking-[0.12em]">
-            <a href="#" class="nav__link">About</a>
+            <a
+              href="#"
+              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:opacity-0 after:transition"
+              >About</a
+            >
           </li>
           <li class="nav__item tracking-[0.12em]">
-            <a href="#" class="nav__link">Services</a>
+            <a
+              href="#"
+              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:opacity-0 after:transition"
+              >Services</a
+            >
           </li>
           <li class="nav__item tracking-[0.12em]">
-            <a href="#" class="nav__link">Projects</a>
+            <a
+              href="#"
+              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:opacity-0 after:transition"
+              >Projects</a
+            >
           </li>
         </menu>
       </nav>
@@ -323,7 +353,7 @@
             <img
               src="./images/icon-facebook.svg"
               alt=""
-              class="socials__icon"
+              class="socials__icon transition-transform hover:scale-110"
             />
           </a>
         </li>
@@ -332,13 +362,17 @@
             <img
               src="./images/icon-instagram.svg"
               alt=""
-              class="socials__icon"
+              class="socials__icon transition-transform hover:scale-110"
             />
           </a>
         </li>
         <li class="socials__item">
           <a href="#" class="socials__link">
-            <img src="./images/icon-twitter.svg" alt="" class="socials__icon" />
+            <img
+              src="./images/icon-twitter.svg"
+              alt=""
+              class="socials__icon transition-transform hover:scale-110"
+            />
           </a>
         </li>
         <li class="socials__item">
@@ -346,7 +380,7 @@
             <img
               src="./images/icon-pinterest.svg"
               alt=""
-              class="socials__icon"
+              class="socials__icon transition-transform hover:scale-110"
             />
           </a>
         </li>
