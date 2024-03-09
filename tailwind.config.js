@@ -22,7 +22,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-img": "url('../images/mobile/image-header.jpg')",
-        "hero-img-desktop": "url('../images/desktop/image-header.jpg)",
+        "hero-img-desktop": "url('../images/desktop/image-header.jpg')",
       },
     },
   },

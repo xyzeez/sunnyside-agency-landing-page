@@ -24,17 +24,17 @@
   </head>
   <body>
     <header
-      class="header fixed top-0 z-10 flex w-full flex-row items-center justify-between px-6 py-8"
+      class="header fixed top-0 z-10 flex w-full flex-row items-center justify-between px-6 py-8 lg:px-10"
     >
-      <a href="#" class="header__logo logo">
-        <img src="./images/logo.svg" alt="" class="logo__img" />
+      <a href="#" class="header__logo logo sm:w-[155px]">
+        <img src="./images/logo.svg" alt="" class="logo__img w-full" />
       </a>
       <nav class="header__nav nav">
-        <div class="nav__toggle">
+        <div class="nav__toggle sm:hidden">
           <img src="./images/icon-hamburger.svg" alt="" />
         </div>
         <menu
-          class="nav__menu after:clip-polygon absolute right-6 top-[calc(100%+1.2rem)] flex hidden w-[calc(100%-3rem)] flex-col items-center gap-6 bg-white py-10 font-barlow text-[1.2rem] font-semibold text-blue-dark-gray after:absolute after:-top-6 after:right-0 after:aspect-[5/6] after:h-7 after:bg-white after:content-['']"
+          class="nav__menu after:clip-polygon absolute right-6 top-[calc(100%+1.2rem)] hidden w-[calc(100%-3rem)] flex-col items-center gap-6 bg-white py-10 font-barlow text-[1.2rem] font-semibold text-blue-dark-gray after:absolute after:-top-6 after:right-0 after:aspect-[5/6] after:h-7 after:bg-white after:content-[''] sm:relative sm:right-0 sm:flex sm:w-full sm:flex-row sm:gap-10 sm:bg-transparent sm:p-0 sm:text-[1rem] sm:font-normal sm:text-white sm:after:hidden"
         >
           <li class="nav__item"><a href="#" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
@@ -42,7 +42,7 @@
           <li class="nav__item my-4">
             <a
               href="#"
-              class="nav__link rounded-full bg-yellow px-8 py-4 font-fraunces text-[1rem] font-[700] uppercase text-blue-desaturated"
+              class="nav__link rounded-full bg-yellow px-8 py-4 font-fraunces text-[1rem] font-[700] uppercase text-blue-desaturated sm:bg-white sm:px-6 lg:text-[0.9rem]"
             >
               Contact
             </a>
@@ -52,31 +52,41 @@
     </header>
     <main class="main">
       <section
-        class="hero flex min-h-[84vh] flex-col items-center bg-hero-img bg-cover bg-[center_bottom] bg-no-repeat after:absolute after:bottom-[228px] after:content-[url('../images/icon-arrow-down.svg')]"
+        class="hero sm:bg-hero-img-desktop relative flex min-h-[530px] flex-col items-center bg-hero-img bg-cover bg-[center_bottom] bg-no-repeat after:absolute after:bottom-[16%] after:content-[url('../images/icon-arrow-down.svg')] sm:min-h-screen sm:after:bottom-[40%]"
       >
         <h1
-          class="hero__heading heading mt-36 text-center font-fraunces text-[2.5rem] font-[900] uppercase leading-[3rem] tracking-[0.18em] text-white"
+          class="hero__heading heading mt-36 w-[10.6ch] text-center font-fraunces text-[2.5rem] font-[900] uppercase leading-[3rem] tracking-[0.18em] text-white sm:mt-[25vh] sm:w-fit sm:text-[3.1rem]"
         >
           We are creatives
         </h1>
       </section>
-      <section class="features flex flex-col text-center">
-        <div class="feature">
-          <picture class="feature__img">
+      <section
+        class="features flex flex-col text-center sm:grid sm:grid-cols-4 sm:grid-rows-3"
+      >
+        <div
+          class="feature sm:col-start-1 sm:col-end-5 sm:grid sm:grid-cols-2 sm:grid-rows-1"
+        >
+          <picture class="feature__img block">
             <source
               srcset="./images/desktop/image-transform.jpg"
-              media="(min-width: 600px)"
+              media="(min-width: 640px)"
             />
-            <img src="./images/mobile/image-transform.jpg" alt="" />
+            <img
+              src="./images/mobile/image-transform.jpg"
+              alt=""
+              class="h-full object-cover object-center"
+            />
           </picture>
-          <div class="feature__content flex flex-col items-center px-6 py-16">
+          <div
+            class="feature__content flex flex-col items-center justify-center px-6 py-16 sm:row-start-1 sm:items-start sm:text-left lg:px-10 xl:pl-36 xl:pr-24"
+          >
             <h2
-              class="feature__heading heading font-fraunces text-[2rem] font-[900] leading-[2.5rem] text-blue-desaturated"
+              class="feature__heading heading font-fraunces text-[2rem] font-[900] leading-[2.5rem] text-blue-desaturated xl:text-[2.3rem]"
             >
               Transform your brand
             </h2>
             <p
-              class="feature__text text mb-8 mt-6 font-barlow text-[1.15rem] font-semibold leading-[1.8rem] text-blue-dark-gray"
+              class="feature__text text mb-8 mt-6 font-barlow text-[1.15rem] font-semibold leading-[1.8rem] text-blue-dark-gray xl:text-[1rem]"
             >
               We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
@@ -89,15 +99,23 @@
             >
           </div>
         </div>
-        <div class="feature">
+        <div
+          class="feature sm:col-start-1 sm:col-end-5 sm:grid sm:grid-cols-2 sm:grid-rows-1"
+        >
           <picture class="feature__img">
             <source
               srcset="./images/desktop/image-stand-out.jpg"
-              media="(min-width: 600px)"
+              media="(min-width: 640px)"
             />
-            <img src="./images/mobile/image-stand-out.jpg" alt="" />
+            <img
+              src="./images/mobile/image-stand-out.jpg"
+              alt=""
+              class="h-full object-cover object-center"
+            />
           </picture>
-          <div class="feature__content flex flex-col items-center px-6 py-16">
+          <div
+            class="feature__content flex flex-col items-center justify-center px-6 py-16 sm:items-start sm:text-left lg:px-10 xl:pl-36 xl:pr-24"
+          >
             <h2
               class="feature__heading heading font-fraunces text-[2rem] font-[900] leading-[2.5rem] text-blue-desaturated"
             >
@@ -118,7 +136,7 @@
           </div>
         </div>
         <div
-          class="feature--single flex min-h-[80vh] flex-col items-center justify-end bg-[url(../images/desktop/image-graphic-design.jpg)] bg-cover bg-[center_top] bg-no-repeat px-6 pb-14"
+          class="feature--single flex min-h-[530px] flex-col items-center justify-end bg-[url(../images/mobile/image-graphic-design.jpg)] bg-cover bg-[center_top] bg-no-repeat px-6 pb-14 min-[400px]:bg-[url(../images/desktop/image-graphic-design.jpg)] sm:col-start-1 sm:col-end-3"
         >
           <div class="feature__content">
             <h3
@@ -136,7 +154,7 @@
           </div>
         </div>
         <div
-          class="feature--single flex min-h-[80vh] flex-col items-center justify-end bg-[url(../images/desktop/image-photography.jpg)] bg-cover bg-[center_top] bg-no-repeat px-6 pb-14"
+          class="feature--single flex min-h-[530px] flex-col items-center justify-end bg-[url(../images/mobile/image-photography.jpg)] bg-cover bg-[center_top] bg-no-repeat px-6 pb-14 min-[400px]:bg-[url(../images/desktop/image-photography.jpg)] sm:col-start-3 sm:col-end-5"
         >
           <div class="feature__content">
             <h3
@@ -154,114 +172,124 @@
         </div>
       </section>
       <section
-        class="testimonials flex flex-col items-center px-5 py-16 text-center"
+        class="testimonials flex flex-col items-center px-5 py-16 text-center lg:px-24 lg:pb-28 lg:pt-36"
       >
         <h2
-          class="testimonials__heading heading mb-7 font-fraunces text-[1rem] font-[900] uppercase tracking-[0.25em] text-blue-gray"
+          class="testimonials__heading heading mb-7 font-fraunces text-[1rem] font-[900] uppercase tracking-[0.25em] text-blue-gray lg:mb-10"
         >
           Client testimonials
         </h2>
-        <article class="testimonial flex flex-col items-center px-5 py-7">
-          <img
-            src="./images/image-emily.jpg"
-            alt=""
-            class="testimonial__avatar w-[75px] rounded-full"
-          />
-          <h3
-            class="testimonial__title order-3 font-barlow text-[0.8rem] font-semibold leading-[2rem] text-blue-gray"
+        <div class="flex flex-col flex-wrap sm:flex-row">
+          <article
+            class="testimonial flex flex-shrink flex-grow basis-[300px] flex-col items-center px-5 py-7"
           >
-            <span
-              class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated"
-              >Emily R.</span
+            <img
+              src="./images/image-emily.jpg"
+              alt=""
+              class="testimonial__avatar w-[75px] rounded-full lg:w-[65px]"
+            />
+            <h3
+              class="testimonial__title order-3 font-barlow text-[0.8rem] font-normal leading-[2rem] text-blue-gray"
             >
-            Marketing Director
-          </h3>
-          <p
-            class="testimonial__content text mb-8 mt-10 font-barlow text-[1.1rem] font-semibold leading-[1.8rem] text-blue-very-dark-gray"
-          >
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-        </article>
-        <article class="testimonial flex flex-col items-center px-5 py-7">
-          <img
-            src="./images/image-thomas.jpg"
-            alt=""
-            class="testimonial__avatar w-[75px] rounded-full"
-          />
-          <h3
-            class="testimonial__title order-3 font-barlow text-[0.8rem] font-semibold leading-[2rem] text-blue-gray"
-          >
-            <span
-              class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated"
-              >Thomas S.</span
+              <span
+                class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated lg:text-[1rem]"
+                >Emily R.</span
+              >
+              Marketing Director
+            </h3>
+            <p
+              class="testimonial__content text mb-8 mt-10 max-w-[34ch] font-barlow text-[1.1rem] font-normal leading-[1.8rem] text-blue-very-dark-gray lg:mb-12 lg:mt-12 lg:text-[1rem]"
             >
-            Chief Operating Officer
-          </h3>
-          <p
-            class="testimonial__content text mb-8 mt-10 font-barlow text-[1.1rem] font-semibold leading-[1.8rem] text-blue-very-dark-gray"
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+          </article>
+          <article
+            class="testimonial flex flex-shrink flex-grow basis-[300px] flex-col items-center px-5 py-7"
           >
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-        </article>
-        <article class="testimonial flex flex-col items-center px-5 py-7">
-          <img
-            src="./images/image-jennie.jpg"
-            alt=""
-            class="testimonial__avatar w-[75px] rounded-full"
-          />
-          <h3
-            class="testimonial__title order-3 font-barlow text-[0.8rem] font-semibold leading-[2rem] text-blue-gray"
-          >
-            <span
-              class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated"
-              >Jennie F.</span
+            <img
+              src="./images/image-thomas.jpg"
+              alt=""
+              class="testimonial__avatar w-[75px] rounded-full lg:w-[65px]"
+            />
+            <h3
+              class="testimonial__title order-3 font-barlow text-[0.8rem] font-normal leading-[2rem] text-blue-gray"
             >
-            Business Owner
-          </h3>
-          <p
-            class="testimonial__content text mb-8 mt-10 font-barlow text-[1.1rem] font-semibold leading-[1.8rem] text-blue-very-dark-gray"
+              <span
+                class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated lg:text-[1rem]"
+                >Thomas S.</span
+              >
+              Chief Operating Officer
+            </h3>
+            <p
+              class="testimonial__content text mb-8 mt-10 max-w-[34ch] font-barlow text-[1.1rem] font-normal leading-[1.8rem] text-blue-very-dark-gray lg:mb-12 lg:mt-12 lg:text-[1rem]"
+            >
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+          </article>
+          <article
+            class="testimonial flex flex-shrink flex-grow basis-[300px] flex-col items-center px-5 py-7"
           >
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-        </article>
+            <img
+              src="./images/image-jennie.jpg"
+              alt=""
+              class="testimonial__avatar w-[75px] rounded-full lg:w-[65px]"
+            />
+            <h3
+              class="testimonial__title order-3 font-barlow text-[0.8rem] font-normal leading-[2rem] text-blue-gray"
+            >
+              <span
+                class="testimonial__name heading block font-fraunces text-[1.2rem] font-[900] text-blue-desaturated lg:text-[1rem]"
+                >Jennie F.</span
+              >
+              Business Owner
+            </h3>
+            <p
+              class="testimonial__content text mb-8 mt-10 max-w-[34ch] font-barlow text-[1.1rem] font-normal leading-[1.8rem] text-blue-very-dark-gray lg:mb-12 lg:mt-12 lg:text-[1rem]"
+            >
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+          </article>
+        </div>
       </section>
-      <section class="gallery grid grid-cols-2 grid-rows-2">
+      <section
+        class="gallery grid grid-cols-2 grid-rows-2 min-[500px]:grid-cols-4 min-[500px]:grid-rows-1"
+      >
         <h2 class="sr-only">Gallery</h2>
         <picture class="gallery__img">
           <source
             srcset="./images/desktop/image-gallery-milkbottles.jpg"
-            media="(min-width: 600px)"
+            media="(min-width: 500px)"
           />
           <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="" />
         </picture>
         <picture class="gallery__img">
           <source
             srcset="./images/desktop/image-gallery-orange.jpg"
-            media="(min-width: 600px)"
+            media="(min-width: 500px)"
           />
           <img src="./images/mobile/image-gallery-orange.jpg" alt="" />
         </picture>
         <picture class="gallery__img">
           <source
             srcset="./images/desktop/image-gallery-cone.jpg"
-            media="(min-width: 600px)"
+            media="(min-width: 500px)"
           />
           <img src="./images/mobile/image-gallery-cone.jpg" alt="" />
         </picture>
         <picture class="gallery__img">
           <source
             srcset="./images/desktop/image-gallery-sugarcubes.jpg"
-            media="(min-width: 600px)"
+            media="(min-width: 500px)"
           />
           <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="" />
         </picture>
       </section>
     </main>
     <footer
-      class="footer flex min-h-[47vh] flex-col items-center bg-[hsl(167,44%,70%)] bg-opacity-80 pb-[5rem] pt-[4rem]"
+      class="footer flex min-h-[350px] flex-col items-center bg-[hsl(167,44%,70%)] bg-opacity-80 pb-[5rem] pt-[4rem] lg:min-h-[310px] lg:pb-[4rem]"
     >
       <a href="#" class="footer__logo logo w-[170px]">
         <svg viewBox="0 0 124 24" xmlns="http://www.w3.org/2000/svg">
@@ -273,7 +301,7 @@
         </svg>
       </a>
       <nav
-        class="footer__nav nav mt-10 font-barlow text-[0.9rem] font-semibold"
+        class="footer__nav nav mt-10 font-barlow text-[0.9rem] font-semibold lg:mt-8"
       >
         <menu
           class="nav__menu flex flex-row items-center gap-14 text-cyan-moderate"
@@ -289,7 +317,7 @@
           </li>
         </menu>
       </nav>
-      <ul class="footer__socials socials mt-auto flex flex-row gap-8">
+      <ul class="footer__socials socials mt-auto flex flex-row gap-8 lg:gap-6">
         <li class="socials__item">
           <a href="#" class="socials__link">
             <img
