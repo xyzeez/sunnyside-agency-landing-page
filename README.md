@@ -13,11 +13,11 @@
   <!--  -->
   <p align="center">
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://femc-sunnyside-agency-landing-page.netlify.app/">View Demo</a>
     ·
-    <a href="#" target="_blank">Report Bug</a>
+    <a href="https://github.com/xyzeez/sunnyside-agency-landing-page/issues" target="_blank">Report Bug</a>
     ·
-    <a href="#" target="_blank">Request Feature</a>
+    <a href="https://github.com/xyzeez/sunnyside-agency-landing-page/issues" target="_blank">Request Feature</a>
   </p>
   <!--  -->
   <div align="center">
@@ -30,8 +30,8 @@
     <!-- Status -->
     <a href="#">
       <img
-        src="https://img.shields.io/badge/Status-In Development-0074D9?style=for-the-badge"
-        alt="Status In Development" />
+        src="https://img.shields.io/badge/Status-Completed-2ECC40?style=for-the-badge"
+        alt="Status Completed" />
     </a>
   </div>
 
@@ -65,8 +65,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL here](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-tailwindcss-Cg_o8zWjRO)
+- Live Site URL: [URL here](https://femc-sunnyside-agency-landing-page.netlify.app/)
 
 ## My process
 
@@ -76,14 +76,13 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Tailwind CSS](https://tailwindcss.com/docs) - Get started with Tailwind CSS
+- [Let's Build an Accessible Disclosure](https://fedmentor.dev/posts/disclosure-ui/) - This is an amazing article which helped me in understanding accessibility for mobile-menus
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@xyzeez](https://www.frontendmentor.io/profile/xyzeez)
+- Twitter - [@xyzeez\_](https://twitter.com/xyzeez_)
 
 ## Acknowledgments
 
