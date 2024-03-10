@@ -22,6 +22,18 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="../src/script.js" defer></script>
+    <style>
+      [data-state="no-js"] .disclosure__content {
+        display: none;
+      }
+    </style>
+    <noscript>
+      <style>
+        [data-state="no-js"] .disclosure__content {
+          display: block;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <header
@@ -34,18 +46,14 @@
       >
         <img src="./images/logo.svg" alt="" class="logo__img w-full" />
       </a>
-      <style>
-        [data-state="no-js"] .disclosure__content {
-          display: none;
-        }
-      </style>
-      <nav class="header__nav nav disclosure js-disclosure" data-state="no-js">
+      <nav class="nav header__nav" data-state="no-js">
         <label
           aria-label="toggle menu"
           class="nav__toggle hamburger peer sm:hidden"
         >
           <input
             type="checkbox"
+            role="checkbox"
             class="disclosure__button js-disclosure-btn"
             disabled
             aria-controls="menu"
@@ -424,11 +432,4 @@
       </ul>
     </footer>
   </body>
-  <noscript>
-    <style>
-      [data-state="no-js"] .disclosure__content {
-        display: block;
-      }
-    </style>
-  </noscript>
 </html>

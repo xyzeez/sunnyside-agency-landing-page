@@ -1,5 +1,5 @@
 // disclosure.js
-const disclosure = document.querySelector(".js-disclosure");
+const disclosure = document.querySelector(".header__nav");
 const disclosureButton = disclosure.querySelector(".js-disclosure-btn");
 
 function toggleDisclosure() {
