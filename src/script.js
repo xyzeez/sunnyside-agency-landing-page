@@ -7,10 +7,12 @@ function toggleDisclosure() {
 
   if (isExpanded) {
     disclosureButton.setAttribute("aria-expanded", false);
+    disclosureButton.setAttribute("aria-checked", false);
     return;
   }
 
   disclosureButton.setAttribute("aria-expanded", true);
+  disclosureButton.setAttribute("aria-checked", true);
 }
 
 function monitorDisclosure() {
