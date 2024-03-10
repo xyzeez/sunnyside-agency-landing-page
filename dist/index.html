@@ -30,30 +30,37 @@
         <img src="./images/logo.svg" alt="" class="logo__img w-full" />
       </a>
       <nav class="header__nav nav">
-        <div class="nav__toggle sm:hidden">
-          <img src="./images/icon-hamburger.svg" alt="" />
-        </div>
+        <label class="nav__toggle hamburger peer sm:hidden">
+          <input type="checkbox" />
+          <svg viewBox="0 0 32 32">
+            <path
+              class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+            ></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
         <menu
-          class="nav__menu after:clip-polygon absolute right-6 top-[calc(100%+1.2rem)] hidden w-[calc(100%-3rem)] flex-col items-center gap-6 bg-white py-10 font-barlow text-[1.2rem] font-semibold text-blue-dark-gray after:absolute after:-top-6 after:right-0 after:aspect-[5/6] after:h-7 after:bg-white after:content-[''] sm:relative sm:right-0 sm:flex sm:w-full sm:flex-row sm:gap-10 sm:bg-transparent sm:p-0 sm:text-[1rem] sm:font-normal sm:text-white sm:after:hidden"
+          class="nav__menu after:clip-polygon absolute right-6 top-[calc(100%+1.2rem)] hidden w-[calc(100%-3rem)] flex-col items-center gap-6 bg-white py-10 font-barlow text-[1.2rem] font-semibold text-blue-dark-gray after:absolute after:-top-6 after:right-0 after:aspect-[5/6] after:h-7 after:bg-white after:content-[''] peer-has-[:checked]:flex sm:relative sm:right-0 sm:flex sm:w-full sm:flex-row sm:gap-10 sm:bg-transparent sm:p-0 sm:text-[1rem] sm:font-normal sm:text-white sm:after:hidden"
         >
           <li class="nav__item">
             <a
               href="#"
-              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:opacity-0 after:transition sm:after:bg-white"
+              class="nav__link after:constent-[''] hover:after:trans after:hover:translate-underline relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:underline after:opacity-0 after:transition sm:after:bg-white"
               >About</a
             >
           </li>
           <li class="nav__item">
             <a
               href="#"
-              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:opacity-0 after:transition sm:after:bg-white"
+              class="nav__link after:constent-[''] hover:after:trans after:hover:translate-underline relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:underline after:opacity-0 after:transition sm:after:bg-white"
               >Services</a
             >
           </li>
           <li class="nav__item">
             <a
               href="#"
-              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:opacity-0 after:transition sm:after:bg-white"
+              class="nav__link after:constent-[''] hover:after:trans after:hover:translate-underline relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-blue-dark-gray after:underline after:opacity-0 after:transition sm:after:bg-white"
               >Projects</a
             >
           </li>
@@ -70,7 +77,7 @@
     </header>
     <main class="main">
       <section
-        class="hero sm:bg-hero-img-desktop relative flex min-h-[530px] flex-col items-center bg-hero-img bg-cover bg-[center_bottom] bg-no-repeat after:absolute after:bottom-[16%] after:content-[url('../images/icon-arrow-down.svg')] sm:min-h-screen sm:after:bottom-[40%]"
+        class="hero relative flex min-h-[530px] flex-col items-center bg-hero-img bg-cover bg-[center_bottom] bg-no-repeat after:absolute after:bottom-[16%] after:content-[url('../images/icon-arrow-down.svg')] sm:min-h-screen sm:bg-hero-img-desktop sm:after:bottom-[40%]"
       >
         <h1
           class="hero__heading heading mt-36 w-[10.6ch] text-center font-fraunces text-[2.5rem] font-[900] uppercase leading-[3rem] tracking-[0.18em] text-white sm:mt-[25vh] sm:w-fit sm:text-[3.1rem]"
@@ -327,21 +334,21 @@
           <li class="nav__item tracking-[0.12em]">
             <a
               href="#"
-              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:opacity-0 after:transition"
+              class="nav__link after:constent-[''] hover:after:trans after:hover:translate-underline relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:underline after:opacity-0 after:transition"
               >About</a
             >
           </li>
           <li class="nav__item tracking-[0.12em]">
             <a
               href="#"
-              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:opacity-0 after:transition"
+              class="nav__link after:constent-[''] hover:after:trans after:hover:translate-underline relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:underline after:opacity-0 after:transition"
               >Services</a
             >
           </li>
           <li class="nav__item tracking-[0.12em]">
             <a
               href="#"
-              class="nav__link after:constent-[''] after:line hover:after:trans after:hover:translate-line relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:opacity-0 after:transition"
+              class="nav__link after:constent-[''] hover:after:trans after:hover:translate-underline relative block overflow-hidden py-[0.2em] after:absolute after:bottom-0 after:left-0 after:h-[0.1em] after:w-full after:bg-cyan-moderate after:underline after:opacity-0 after:transition"
               >Projects</a
             >
           </li>
