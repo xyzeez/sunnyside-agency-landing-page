@@ -58,9 +58,36 @@ const monitorMenu = () => {
   });
 };
 
+// Observer
+const toObserve = document.querySelector(".hero");
+const header = document.querySelector("header");
+
+function scrollCallBack(payload) {
+  if (!payload[0].isIntersecting) {
+    header.classList.remove("absolute");
+    header.classList.add("bg-[#3EBFFF]");
+    header.classList.add("py-[18px]");
+    header.classList.add("fixed");
+    return;
+  }
+
+  header.classList.add("absolute");
+  header.classList.remove("bg-[#3EBFFF]");
+  header.classList.remove("py-[18px]");
+  header.classList.remove("fixed");
+}
+
+let options = {
+  rootMargin: "-50%",
+  threshold: 0,
+};
+
+let scrollObserver = new IntersectionObserver(scrollCallBack, options);
+
 const init = () => {
   monitorDisclosure();
   monitorMenu();
+  scrollObserver.observe(toObserve);
 };
 
 init();
