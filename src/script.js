@@ -65,16 +65,12 @@ const header = document.querySelector("header");
 function scrollCallBack(payload) {
   if (!payload[0].isIntersecting) {
     header.classList.remove("absolute");
-    header.classList.add("bg-[#3EBFFF]");
-    header.classList.add("py-[18px]");
-    header.classList.add("fixed");
+    header.classList.add("header-sticky");
     return;
   }
 
   header.classList.add("absolute");
-  header.classList.remove("bg-[#3EBFFF]");
-  header.classList.remove("py-[18px]");
-  header.classList.remove("fixed");
+  header.classList.remove("header-sticky");
 }
 
 let options = {
