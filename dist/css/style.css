@@ -673,6 +673,22 @@ video {
   max-width: 34ch;
 }
 
+.max-w-\[50ch\] {
+  max-width: 50ch;
+}
+
+.max-w-\[40ch\] {
+  max-width: 40ch;
+}
+
+.max-w-\[35ch\] {
+  max-width: 35ch;
+}
+
+.max-w-\[38ch\] {
+  max-width: 38ch;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
