@@ -1137,6 +1137,25 @@ video {
   width: 100%;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    content: var(--tw-content);
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    content: var(--tw-content);
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.after\:animate-bounce::after {
+  content: var(--tw-content);
+  animation: bounce 1s infinite;
+}
+
 .after\:bg-blue-dark-gray::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
